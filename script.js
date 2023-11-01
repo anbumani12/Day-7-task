@@ -1,4 +1,4 @@
-//a
+//a Get all the countries from Asia continent/region usnig filter function
 
 var request = new XMLHttpRequest();
 request.open("GET","https://restcountries.com/v3.1/all",true)
