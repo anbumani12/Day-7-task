@@ -19,7 +19,7 @@ request1.open("GET","https://restcountries.com/v3.1/all",true)
 request1.send();
 request1.onload = function(){
     var data1 = request1.response;
-   var result1 = JSON.parse(data1);
+   var result1 = JSON1.parse(data1);
    var res1 = result1.filter((a)=>a.population<200000);
    var Final = res1.map((ele)=>console.log(ele.name.common));
 }
@@ -31,7 +31,7 @@ request2.open("GET","https://restcountries.com/v3.1/all",true)
 request2.send();
 request2.onload = function(){
     var data2 = request2.response;
-    var result2 = JSON.parse(data2); 
+    var result2 = JSON2.parse(data2); 
     var res2= result2.forEach((ele)=>console.log(`Name: ${ele.name.common},Capital: ${ele.capital},Flag: ${ele.flags.png}`));
 }
 
@@ -43,7 +43,7 @@ request3.open("GET","https://restcountries.com/v3.1/all",true)
 request3.send();
 request3.onload = function(){
     var data3 = request3.response;
-    var result3 = JSON.parse(data3);
+    var result3 = JSON3.parse(data3);
     var res3 = result3.reduce((acc,cv)=>{
         return acc+cv.population;
     },0)
