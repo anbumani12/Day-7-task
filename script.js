@@ -30,7 +30,7 @@ var request2 = new XMLHttpRequest();
 request2.open("GET","https://restcountries.com/v3.1/all",true)
 request2.send();
 request2.onload = function(){
-    var data2 = request3.response;
+    var data2 = request2.response;
     var result2 = JSON.parse(data2); 
     var res2= result2.forEach((ele)=>console.log(`Name: ${ele.name.common},Capital: ${ele.capital},Flag: ${ele.flags.png}`));
 }
