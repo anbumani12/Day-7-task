@@ -21,7 +21,7 @@ request1.onload = function(){
     var data1 = request1.response;
    var result1 = JSON.parse(data1);
    var res1 = result1.filter((a)=>a.population<200000);
-   var final1 = res1.map((ele)=>console.log(ele.name.common));
+   var Final = res1.map((ele)=>console.log(ele.name.common));
 }
 
 //c Print the following name,capital,flag using foreach function
